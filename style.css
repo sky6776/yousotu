@@ -55,16 +55,16 @@ main {
 .site-footer {
     background: #f8f9fa;
     padding: 10px 0;
-  }
+}
   
-  .copyright {
+.copyright {
     font-family: Terminal;
     color: rgb(0, 0, 0);
     font-size: 15px;
     text-align: center;
-  }
+}
   
-  .last {
+.last {
     color: rgb(0, 0, 0);
     font-size: 12px;
-  }
+}
