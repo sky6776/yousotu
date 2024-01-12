@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background: #f8f9fa;
 }
 
 #opening-layer {
@@ -34,23 +35,25 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
     z-index: 1000;
 }
 
 #main-header {
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
-#sub-header {
-    font-size: 1.2em;
+.maintext {
+    padding-top: 40px;
+    color: #000000;
+    text-align: center;
+    font-size: 2em;
 }
 
 main {
-    padding-top: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -58,7 +61,6 @@ main {
 }
 
 .product {
-    background: #f8f9fa;
     box-sizing: border-box;
     width: 30%;
     padding: 10px;
@@ -79,7 +81,6 @@ main {
 }
 
 .site-footer {
-    background: #f8f9fa;
     padding: 10px 0;
 }
   
