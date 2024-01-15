@@ -77,7 +77,9 @@ main {
     max-width: 100%;
     height: auto;
 }
-
+.redtext {
+    color: #ff0000;
+}
 @media screen and (max-width: 768px) {
     .product {
         width: 100%;
