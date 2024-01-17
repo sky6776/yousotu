@@ -21,9 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // 既存のコードをそのまま移植
 
-    // モータルウィンドウの表示
     setTimeout(function() {
         document.getElementById('opening-layer').style.opacity = '0';
         setTimeout(function() {
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 3000);
     }, 1000);
 
-    // モータルウィンドウを閉じる
     document.getElementById('close-modal-button').addEventListener('click', function() {
         document.getElementById('modal-window').style.display = 'none';
     });
