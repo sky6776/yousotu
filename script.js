@@ -20,6 +20,24 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // 既存のコードをそのまま移植
+
+    // モータルウィンドウの表示
+    setTimeout(function() {
+        document.getElementById('opening-layer').style.opacity = '0';
+        setTimeout(function() {
+            document.getElementById('opening-layer').style.display = 'none';
+            document.getElementById('modal-window').style.display = 'flex';
+        }, 3000);
+    }, 1000);
+
+    // モータルウィンドウを閉じる
+    document.getElementById('close-modal-button').addEventListener('click', function() {
+        document.getElementById('modal-window').style.display = 'none';
+    });
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
