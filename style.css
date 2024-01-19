@@ -31,7 +31,6 @@ body {
 }
 
 #category-buttons {
-    padding-top: 50px;
     display: flex;
     justify-content: center;
     margin: 20px 0;
@@ -51,6 +50,12 @@ body {
     color: #fff;
 }
 
+.mainimg {
+    padding-top: 120px;
+    width: 100%;
+    height: auto;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -68,11 +73,8 @@ header {
     font-weight: bold;
 }
 
-.maintext {
-    font-family: "MS PMincho";
-    color: #000000;
-    text-align: center;
-    font-size: 2em;
+.goods {
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -104,6 +106,12 @@ main {
     .product {
         width: 100%;
     }
+}
+
+.maintitle {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #ff0000;
 }
 
 .site-footer {
@@ -151,4 +159,38 @@ main {
     margin-top: 15px;
     border: none;
     cursor: pointer;
+}
+
+.look {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 25px;
+    background-color: #2589d0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.look:hover {
+    animation: anima-look 2s linear;
+}
+
+@keyframes anima-look {
+    7% {
+        transform: translateY(-15px);
+    }
+    15% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-7px);
+    }
+    25% {
+        transform: translateY(0);
+    }
 }
