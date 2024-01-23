@@ -44,3 +44,19 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 3000);
   }, 1000);
 });
+document.addEventListener("DOMContentLoaded", function() {
+
+    const hideModalCheckbox = document.getElementById('hide-modal-checkbox');
+    const modalWindow = document.getElementById('modal-window');
+
+    if (localStorage.getItem('hideModalToday') === 'true') {
+        modalWindow.style.display = 'none';
+    }
+
+    hideModalCheckbox.addEventListener('click', function() {
+        if (hideModalCheckbox.checked) {
+            localStorage.setItem('hideModalToday', 'true');
+        }
+    });
+
+});
