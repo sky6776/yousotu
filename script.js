@@ -44,3 +44,14 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 3000);
   }, 1000);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const soldOutProducts = document.querySelectorAll('.product.sold-out');
+
+    soldOutProducts.forEach(product => {
+      const soldOutOverlay = document.createElement('div');
+      soldOutOverlay.classList.add('sold-out-overlay');
+      soldOutOverlay.innerHTML = '<p>在庫切れ</p>';
+      product.appendChild(soldOutOverlay);
+    });
+  });
