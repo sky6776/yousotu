@@ -21,17 +21,31 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+    const modalWindow = document.getElementById('modal-window');
+    const dontShowAgainCheckbox = document.getElementById('dont-show-again-checkbox');
 
-    setTimeout(function() {
-        document.getElementById('opening-layer').style.opacity = '0';
+    const today = new Date().toLocaleDateString();
+
+    const storedDate = localStorage.getItem('dontShowAgainDate');
+
+    if (!storedDate || storedDate !== today || !dontShowAgainCheckbox.checked) {
         setTimeout(function() {
-            document.getElementById('opening-layer').style.display = 'none';
-            document.getElementById('modal-window').style.display = 'flex';
-        }, 3000);
-    }, 1000);
+            document.getElementById('opening-layer').style.opacity = '0';
+            setTimeout(function() {
+                document.getElementById('opening-layer').style.display = 'none';
+                modalWindow.style.display = 'flex';
+            }, 3000);
+        }, 1000);
+    }
+
+    dontShowAgainCheckbox.addEventListener('change', function() {
+        if (dontShowAgainCheckbox.checked) {
+            localStorage.setItem('dontShowAgainDate', today);
+        }
+    });
 
     document.getElementById('close-modal-button').addEventListener('click', function() {
-        document.getElementById('modal-window').style.display = 'none';
+        modalWindow.style.display = 'none';
     });
 });
 
