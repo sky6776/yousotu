@@ -147,3 +147,7 @@ a.look:hover {
 .product.sold-out img {
     filter: grayscale(100%);
 }
+
+.test {
+    text-align: center;
+}
