@@ -42,10 +42,6 @@ header {
     z-index: 1000;
 }
 
-main {
-    padding-top: 80px;
-}
-
 #main-header {
     font-size: 1.7em;
     font-weight: bold;
@@ -144,6 +140,7 @@ main {
 }
 
 .maintitle {
+    padding-top: 5em;
     border-bottom: solid 3px black;
     text-align: center;
 }
@@ -211,4 +208,40 @@ a.productbt {
 a.productbt:hover {
 	color: #27acd9;
 	background: #fff;
+}
+
+.section {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero {
+    background-image: url(./image/IMG1.jpg);
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.ti {
+    line-height: 2em;
+    color: #fff;
+    font-size: 60px;
+    text-shadow:1px 1px 0 #000, -1px -1px 0 #000,
+              -1px 1px 0 #000, 1px -1px 0 #000,
+              0px 1px 0 #000,  0-1px 0 #000,
+              -1px 0 0 #000, 1px 0 0 #000;
+}
+
+.suti {
+    color: #fff;
+    font-size: 40px;
+    text-shadow:1px 1px 0 #000, -1px -1px 0 #000,
+              -1px 1px 0 #000, 1px -1px 0 #000,
+              0px 1px 0 #000,  0-1px 0 #000,
+              -1px 0 0 #000, 1px 0 0 #000;
+}
+
+.he {
+    height: 9em;
 }
