@@ -111,4 +111,8 @@ main {
     .product-details {
         flex-direction: column;
     }
+    .product-info {
+        width: 100%;
+        padding-left: 0;
+    }
 }
