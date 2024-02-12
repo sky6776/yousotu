@@ -30,3 +30,62 @@ document.addEventListener("DOMContentLoaded", function() {
       product.appendChild(soldOutOverlay);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const categoryButtons = document.querySelectorAll('.category-button');
+  const products = document.querySelectorAll('.product');
+
+  const searchBox = document.getElementById('search-box');
+  const searchButton = document.getElementById('search-button');
+  const searchResults = document.getElementById('search-results');
+
+  searchButton.addEventListener('click', function() {
+      searchProducts();
+      clearSearchBox();
+  });
+
+  searchBox.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+          searchProducts();
+          clearSearchBox();
+      }
+  });
+
+  function searchProducts() {
+      const searchTerm = searchBox.value.trim().toLowerCase();
+
+
+      products.forEach(product => {
+          product.style.display = 'none';
+      });
+
+      let found = false;
+
+      products.forEach(product => {
+          const productName = product.querySelector('.goods').textContent.trim().toLowerCase();
+          if (productName.includes(searchTerm)) {
+              product.style.display = 'block';
+              found = true;
+          }
+      });
+
+      if (!found) {
+          searchResults.textContent = '検索した商品はありません';
+      } else {
+          searchResults.textContent = '';
+      }
+
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+      categoryButtons[0].classList.add('active');
+  }
+
+  function clearSearchBox() {
+      searchBox.value = '';
+  }
+
+  categoryButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          searchResults.textContent = '';
+      });
+  });
+});
