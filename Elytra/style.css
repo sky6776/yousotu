@@ -76,3 +76,28 @@ header {
         padding: 10px;
     }
 }
+.review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+.review p:first-child {
+    font-weight: bold;
+}
+
+.review p:nth-child(2) {
+    color: #999;
+}
+
+.review p:last-child {
+    margin-bottom: 0;
+}
+
+.star-rating {
+    color: #FFD700;
+}
