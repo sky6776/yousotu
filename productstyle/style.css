@@ -116,3 +116,22 @@ main {
         padding-left: 0;
     }
 }
+
+.usebox {
+    max-width: 400px;
+    border: 2px solid #2589d0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.usebox span {
+    padding: .4em .8em;
+    background-color: #2589d0;
+    color: #fff;
+}
+
+.usebox p {
+    margin: 0;
+    padding: 1em 1.5em;
+    color: #333;
+}
