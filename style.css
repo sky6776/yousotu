@@ -86,7 +86,7 @@ header {
 }
 
 #close-modal-button {
-    background-color: #2589d0;
+    background-color: #27acd9;
     color: #fff;
     padding: 10px 20px;
     margin-top: 15px;
@@ -139,12 +139,6 @@ header {
     color:#666666;
 }
 
-.maintitle {
-    padding-top: 5em;
-    border-bottom: solid 3px black;
-    text-align: center;
-}
-
 .news-list{
     list-style: none outside;
     margin: 0;
@@ -175,9 +169,6 @@ header {
     margin: 0;
     width: 100%;
 }
-.news-list .item a:hover .title{
-    color: #00F;
-}
   
 @media screen and (max-width: 767px){
   .news-list .item a{
@@ -205,6 +196,7 @@ a.productbt {
 	border-radius: 100vh;
 	transition: 0.5s;
 }
+
 a.productbt:hover {
 	color: #27acd9;
 	background: #fff;
@@ -324,11 +316,12 @@ h2 {
 }
 
 .product-item {
-    width: 200px;
-    text-align: center;
-    border: 1px solid rgb(124, 124, 124);
-    padding: 30px;
+    width: 30%;
+    padding: 10px;
     margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
 }
 .productmobiletext {
     text-align: center;
@@ -364,4 +357,30 @@ h2 {
     .product-slider {
       display: none;
     }
+}
+
+.maintitle {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+.maintitle::before,
+.maintitle::after {
+    width: 3px;
+    height: 40px;
+    background-color: #27acd9;
+    content: '';
+}
+
+.maintitle::before {
+    transform: rotate(-35deg);
+    margin-right: 30px;
+}
+
+.maintitle::after {
+    transform: rotate(35deg);
+    margin-left: 30px;
 }
