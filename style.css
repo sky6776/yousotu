@@ -97,6 +97,7 @@ header {
 .wrapper{
     width:100%;
 }
+
 .wrapper .container{
     max-width:1000px;
     margin:0px auto;
@@ -196,7 +197,6 @@ a.productbt {
 	border-radius: 100vh;
 	transition: 0.5s;
 }
-
 a.productbt:hover {
 	color: #27acd9;
 	background: #fff;
@@ -273,7 +273,6 @@ a.productbt:hover {
     font-size: 25px;
     font-weight: 700;
 }
-
 .selecttitlesub {
     font-size: 13px;
     font-weight: 700;
@@ -323,6 +322,7 @@ h2 {
     text-align: center;
     font-weight: bold;
 }
+
 .productmobiletext {
     text-align: center;
     font-weight: bold;
@@ -383,4 +383,31 @@ h2 {
 .maintitle::after {
     transform: rotate(35deg);
     margin-left: 30px;
+}
+
+.calendar {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar th, .calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.calendar th {
+    background-color: #f2f2f2;
+}
+
+.calendar td:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#opening-hours {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
 }
