@@ -1,5 +1,5 @@
 function updatePrice(quantity) {
-    const pricePerUnit = 64;
+    const pricePerUnit = 1;
     const totalPrice = pricePerUnit * quantity;
-    document.querySelector('.product-price').textContent = 'レッドストーン' + totalPrice.toLocaleString();
+    document.querySelector('.product-price').textContent = '古代の残骸' + totalPrice.toLocaleString();
 }
